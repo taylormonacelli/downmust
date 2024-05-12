@@ -24,8 +24,8 @@ var (
 var Default = Iterate // default mage target
 
 const (
-	ldFlagsPrefix = "github.com/taylormonacelli/downmust/version"
-	buildTarget   = "downmust"
+	ldFlagsPrefix = "github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/version"
+	buildTarget   = "{{ cookiecutter.project_slug }}"
 )
 
 func init() {

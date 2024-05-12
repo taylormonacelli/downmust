@@ -1,4 +1,4 @@
-BIN := downmust
+BIN := {{ cookiecutter.project_slug }}
 
 SRC := $(wildcard *.go **/*.go)
 
@@ -10,7 +10,7 @@ FULL_SHA := $(shell git rev-parse HEAD)
 
 export GOVERSION # goreleaser wants this
 
-PREFIX := github.com/taylormonacelli/downmust/version
+PREFIX := github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/version
 LDFLAGS = -s -w
 LDFLAGS += -X $(PREFIX).Version=$(VERSION)
 LDFLAGS += -X '$(PREFIX).Date=$(DATE)'

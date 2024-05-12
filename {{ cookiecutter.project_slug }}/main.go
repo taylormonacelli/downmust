@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/taylormonacelli/downmust/version"
+	"github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}/version"
 )
 
 func main() {
