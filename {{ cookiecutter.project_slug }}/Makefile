@@ -36,7 +36,7 @@ check: .timestamps/.check.time
 build: $(BIN)
 
 $(BIN): .timestamps/.build.time
-	go build -ldflags "$(LDFLAGS)" -o $@ main.go
+	go build -ldflags "$(LDFLAGS)" -o $@
 
 .timestamps/.build.time: $(SRC)
 	@mkdir -p .timestamps
